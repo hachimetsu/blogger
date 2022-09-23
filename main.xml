@@ -16,8 +16,15 @@
   <head>
     <meta name='viewport' content='width=device-width, initial-scale=1'/>
     <title><data:view.title.escaped/></title>
+
     <b:include name='all-head-content' data='blog'/>
 
+    <b:if cond='data:view.isLayoutMode'>
+    <link rel="stylesheet" href="styles.css">
+    <b:else/>
+    <link rel="stylesheet" href="styles.css">
+    </b:if>
+    
     <b:skin version='1.3.3'><![CDATA[
         ]]></b:skin>
     <b:template-skin><![CDATA[
@@ -131,7 +138,6 @@
       <b:defaultmarkup type='Blog'>
         <b:includable id='main'>
           <b:include name='noContentPlaceholder'/>
-
           <b:comment>Cap the total number of ads (widgets and inline ads).</b:comment>
           <b:with value='3' var='maxNumAds'>
           <b:with value='data:widgets.AdSense.size' var='numDesktopAds'>
@@ -328,7 +334,6 @@
     <b:class name='version-1-3-3' />
     <b:include name='skipNavigation'/>
     <h1>headding - 1</h1>
-    <xi:include herf="https://cdn.jsdelivr.net/gh/hachimetsu/blogger/defaultmarkups.xml">
     <b:section id='search_top' name='Search (Top)' showaddelement='false'/>
 </body>
 </html>
