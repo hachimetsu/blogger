@@ -20,9 +20,9 @@
     <b:include name='all-head-content' data='blog'/>
 
     <b:if cond='data:view.isLayoutMode'>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hachimetsu/blogger/skin.css">
     <b:else/>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hachimetsu/blogger/template-skin.css">
     </b:if>
     
     <b:skin version='1.3.3'><![CDATA[
