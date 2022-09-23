@@ -1,4 +1,7 @@
- body#layout .hidden,
+body{
+ background-color:#c0c0c0;
+}
+body#layout .hidden,
  body#layout .invisible {
      display: inherit;
  }
