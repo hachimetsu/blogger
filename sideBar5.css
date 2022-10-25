@@ -180,7 +180,7 @@ header {
 }
 .sidebar-content .widget{
     margin:  0 0 0 -5px;
-    padding: 0 0 0 5px;
+    padding: 0 0 0 0;
     position: absolute;
     z-index:50;
     background: rgb(159, 158, 158);
