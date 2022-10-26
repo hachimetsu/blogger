@@ -6,9 +6,9 @@
         if (!$('body').toggleClass('is-sidebar').hasClass('is-sidebar') && $('body').hasClass('is-sidebarIcon'))
             $('body').removeClass('is-sidebarIcon');
     });
-    $("#content").on("click", function(){
-        if (!$('body').toggleClass('is-sidebar').hasClass('is-sidebar') && $('body').hasClass('is-sidebarIcon'))
-            $('body').removeClass('is-sidebarIcon');
+    $("#content").on("click", function() {
+        if ($('body').hasClass('is-sidebar'))
+            $('body').toggleClass("is-sidebar").removeClass('is-sidebarIcon');
     });
     /*===== LINK ACTIVE =====*/
     $('.nav_link').click(function () {
