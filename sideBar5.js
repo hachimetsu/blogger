@@ -7,8 +7,9 @@
             $('body').removeClass('is-sidebarIcon');
     });
     $("#content").on("click", function() {
-        if ($('body').hasClass('is-sidebar'))
-            $('body').toggleClass("is-sidebar").removeClass('is-sidebarIcon');
+        if ($('body').hasClass('is-sidebar') || $('body').hasClass('is-sidebarIcon') )
+            $('body').removeClass('is-sidebar'),
+            $('body').removeClass('is-sidebarIcon');
     });
     /*===== LINK ACTIVE =====*/
     $('.nav_link').click(function () {
