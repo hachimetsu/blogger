@@ -236,5 +236,8 @@ header {
         /* width: calc(3*var(--nav-width)); */
         left: calc(3*var(--nav-width) + 12px);
     }
+     #content {
+    padding-right:1rem;
+    }
     
 }
